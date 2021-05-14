@@ -1,6 +1,6 @@
 .drawer-menu {
   $drawer-menu-item-height: 36px;
-  $drawer-menu-content-padding: 8px;
+  $drawer-menu-content-padding: 20px;
   $community-length: 8;
   $expert-length: 2;
   $store-length: 9;
@@ -9,8 +9,8 @@
     @return $drawer-menu-item-height * $length + $drawer-menu-content-padding;
   }
 
-  border-top: 1px solid $border;
-  border-bottom: 1px solid $border;
+  // border-top: 1px solid $border;
+  // border-bottom: 1px solid $border;
 
   &.is-active {
     .drawer-menu-button {
