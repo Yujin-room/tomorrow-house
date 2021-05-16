@@ -16,7 +16,6 @@
       .gnb-icon-button.is-search {
         margin-right: 4px;
       }
-
     }
   }
 
@@ -75,7 +74,7 @@
 
     .logo {
       position: static;
-      margin-right: 32px - ($padding *2);
+      margin-right: 32px - ($padding * 2);
       transform: none;
 
       img {
@@ -94,10 +93,35 @@
 
   @include responsive(D) {
     &-right {
-
-      .input-group {
+      .gnb-search {
+        position: relative;
         width: 264px;
         margin-right: 24px;
+
+        .input-group {
+          width: 100%;
+        }
+
+        .search-history {
+          position: absolute;
+          top: calc(100% + 8px);
+          left: 0;
+          display: none;
+          width: 100%;
+          padding: 16px 8px 8px;
+          background-color: $white;
+          border: 1px solid $border;
+          border-radius: 4px;
+          box-shadow: $dropdown-shadow;
+
+          &.is-active {
+            display: block;
+          }
+
+          &-header {
+            padding: 0 8px;
+          }
+        }
       }
 
       .gnb-button-group {
@@ -112,4 +136,3 @@
     }
   }
 }
-
