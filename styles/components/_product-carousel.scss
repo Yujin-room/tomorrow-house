@@ -1,0 +1,15 @@
+.product-carousel {
+  &-slider {
+    .slider-item {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    };
+  }
+
+  &-thumbnail {
+    display: none;
+  }
+}
